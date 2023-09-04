@@ -1,6 +1,6 @@
 import React from "react";
 import SideabarForm from "../SidebarForm/SideabarForm";
-import SidebarIndicator from "../SidebarIndicators/SidebarIndicator";
+import SidebarIndicator from "../SidebarIndicator/SidebarIndicator";
 import s from "./Sidebar.module.css";
 const Sidebar = () => {
   return (
