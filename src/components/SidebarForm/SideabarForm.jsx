@@ -8,7 +8,6 @@ import {
   ShowDate,
 } from "../../Store/FinanceSlice";
 const SideabarForm = () => {
-  // const [money, setMoney] = useState("");
   const money = useSelector((state) => state.finances.money);
   const dispatch = useDispatch();
   return (

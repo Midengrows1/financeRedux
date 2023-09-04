@@ -1,4 +1,3 @@
-import { useState } from "react";
 import s from "./App.module.css";
 import { Sidebar } from "./components";
 function App() {

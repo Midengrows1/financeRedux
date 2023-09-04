@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div className={s.sidebar}>
       <SideabarForm></SideabarForm>
-      <SidebarIndicator></SidebarIndicator>
+      {/* <SidebarIndicator></SidebarIndicator> */}
     </div>
   );
 };
