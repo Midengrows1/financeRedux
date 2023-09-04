@@ -25,16 +25,7 @@
   border-left: 4px solid #fbcf76;
 }
 
-/* .sidebarIndicator__item::before {
-  content: "";
-  width: 4px;
-  height: 100%;
-  position: absolute;
-  background: #ecb847;
-  display: inline-block;
-  left: 0;
-  top: 0;
-} */
+
 
 .sidebarIndicator__item_desc {
   display: flex;
