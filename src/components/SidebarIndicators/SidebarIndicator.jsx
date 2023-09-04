@@ -4,9 +4,6 @@ import clsx from "clsx";
 import { useDispatch, useSelector } from "react-redux";
 
 const SidebarIndicator = () => {
-  // const type = useSelector((state) => state.finances.type);
-  // const category = useSelector((state) => state.finances.category);
-  // const money = useSelector((state) => state.finances.money);
   const finances = useSelector((state) => state.finances.finances);
   return (
     <div className={s.sidebarIndicator}>
