@@ -1,0 +1,49 @@
+.sidebarIndicator {
+  width: 100%;
+  background: #fff;
+  min-height: 70vh;
+  max-height: 100%;
+  padding: 20px;
+  overflow-y: scroll;
+}
+.sidebarIndicaror_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebarIndicator__item {
+  border-radius: 5px;
+  background: #ffe2a6;
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  border-left: 4px solid #fbcf76;
+}
+
+/* .sidebarIndicator__item::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  background: #ecb847;
+  display: inline-block;
+  left: 0;
+  top: 0;
+} */
+
+.sidebarIndicator__item_desc {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebarIndicator__item_desc span:last-child {
+  font-weight: 600;
+}
+.activeType {
+  background: rgba(142, 102, 213, 0.5);
+  border-left:4px solid rgb(159, 120, 225);
+}
