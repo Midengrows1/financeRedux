@@ -14,10 +14,10 @@ const SidebarIndicator = () => {
             <li key={index}>
               <div
                 className={clsx(s.sidebarIndicator__item, {
-                  [s.activeType]: item.type === "expenses",
+                  [s.activeType]: item.category === "expenses",
                 })}
               >
-                <p>{item.category}</p>
+                <p>{item.type}</p>
                 <div className={s.sidebarIndicator__item_desc}>
                   <span>{item.date}</span>
                   <span>{item.money}$</span>

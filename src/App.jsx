@@ -52,17 +52,17 @@ function App() {
   const newData = useSelector((state) => state.finances.finances);
   console.log(newData);
   const FoodPrice = newData
-    ?.filter((item) => item.category === "food")
+    ?.filter((item) => item.type === "food")
     ?.reduce((accumulator, currentValue) => {
       return accumulator + +currentValue.money;
     }, 0);
   const SalaryPrice = newData
-    ?.filter((item) => item.category === "salary")
+    ?.filter((item) => item.type === "salary")
     ?.reduce((accumulator, currentValue) => {
       return accumulator + +currentValue.money;
     }, 0);
   const DepositPrice = newData
-    ?.filter((item) => item.category === "deposit")
+    ?.filter((item) => item.type === "deposit")
     ?.reduce((accumulator, currentValue) => {
       return accumulator + +currentValue.money;
     }, 0);
