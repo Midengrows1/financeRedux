@@ -3,13 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  /* background: rgba(0, 0, 0, 4%); */
 }
 
 .App {
   display: flex;
   justify-content: space-between;
+  height: 100vh;
+  overflow-y: hidden;
 }
-
+.main {
+  display: flex;
+  justify-content: space-between;
+}
 .App > * {
   flex: 1 1 auto;
 }
@@ -17,10 +23,23 @@
   color: blue;
   text-decoration: underline;
 }
+.main_chart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-ul{
+ul {
   list-style: none;
 }
-button{
+button {
   cursor: pointer;
+}
+.header {
+  height: 50px;
+  background: #006eff;
+  color: #fff;
+  display: flex;
+  padding: 0px 10px;
+  align-items: center;
 }

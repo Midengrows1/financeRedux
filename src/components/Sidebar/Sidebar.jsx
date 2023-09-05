@@ -8,6 +8,7 @@ const Sidebar = () => {
       <SideabarForm></SideabarForm>
       <SidebarIndicator></SidebarIndicator>
     </div>
+    
   );
 };
 export default Sidebar;
