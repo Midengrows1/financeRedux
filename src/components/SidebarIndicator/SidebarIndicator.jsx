@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 const SidebarIndicator = () => {
   const finances = useSelector((state) => state.finances.finances);
-  console.log(finances);
   return (
     <div className={s.sidebarIndicator}>
       <ul className={s.sidebarIndicaror_inner}>
