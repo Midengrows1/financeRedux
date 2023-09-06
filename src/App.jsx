@@ -69,12 +69,13 @@ function App() {
   console.log(FoodPrice);
   const changeFoodPrice = () => {
     data.map((item) => {
-      if (item.title === "Food") {
-        return (item.price = FoodPrice);
-      } else if (item.title === "Salary") {
-        return (item.price = SalaryPrice);
-      } else {
-        item.price = DepositPrice;
+      switch (item.title) {
+        case "Food":
+          return (item.price = FoodPrice);
+        case "Salary":
+          return (item.price = SalaryPrice);
+        case "Deposit":
+          return (item.price = DepositPrice);
       }
     });
     console.log(data);

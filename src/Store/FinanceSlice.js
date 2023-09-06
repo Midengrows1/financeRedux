@@ -11,21 +11,16 @@ const financeSlice = createSlice({
   reducers: {
     selectCurrentOption(state, action) {
       switch (action.payload) {
-        case (action.payload = "income"):
-          state.category = action.payload;
-          break;
-        case (action.payload = "expenses"):
-          state.category = action.payload;
-          break;
-        case (action.payload = "salary"):
-          state.type = action.payload;
-          break;
-        case (action.payload = "food"):
-          state.type = action.payload;
-          break;
-        case (action.payload = "deposit"):
-          state.type = action.payload;
-          break;
+        case "income":
+          return (state.category = action.payload);
+        case "expenses":
+          return (state.category = action.payload);
+        case "salary":
+          return (state.type = action.payload);
+        case "food":
+          return (state.type = action.payload);
+        case "deposit":
+          return (state.type = action.payload);
       }
     },
 
