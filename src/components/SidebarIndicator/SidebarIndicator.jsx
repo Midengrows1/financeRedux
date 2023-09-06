@@ -1,7 +1,7 @@
 import React from "react";
-import s from "./sidebarIndicator.module.css";
 import clsx from "clsx";
 import { useSelector } from "react-redux";
+import s from "./SidebarIndicator.module.css";
 
 const SidebarIndicator = () => {
   const finances = useSelector((state) => state.finances.finances);
