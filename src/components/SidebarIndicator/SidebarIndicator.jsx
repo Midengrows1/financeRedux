@@ -1,10 +1,11 @@
 import React from "react";
+import s from "./SidebarIndicator.module.css";
 import clsx from "clsx";
 import { useSelector } from "react-redux";
-import s from "./SidebarIndicator.module.css";
 
 const SidebarIndicator = () => {
   const finances = useSelector((state) => state.finances.finances);
+  console.log(finances);
   return (
     <div className={s.sidebarIndicator}>
       <ul className={s.sidebarIndicaror_inner}>

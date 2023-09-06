@@ -12,15 +12,20 @@ const financeSlice = createSlice({
     selectCurrentOption(state, action) {
       switch (action.payload) {
         case "income":
-          return (state.category = action.payload);
+          state.category = action.payload;
+          break;
         case "expenses":
-          return (state.category = action.payload);
+          state.category = action.payload;
+          break;
         case "salary":
-          return (state.type = action.payload);
+          state.type = action.payload;
+          break;
         case "food":
-          return (state.type = action.payload);
+          state.type = action.payload;
+          break;
         case "deposit":
-          return (state.type = action.payload);
+          state.type = action.payload;
+          break;
       }
     },
 
